@@ -108,8 +108,8 @@ describe RailsConfig do
     end
 
     it "should merge arrays from multiple configs" do
-      config.arraylist1.size.should eq 6
-      config.arraylist2.inner.size.should eq 6
+      config.arraylist1.should eq [4, 5, 6]
+      config.arraylist2.inner.should eq [4, 5, 6]
     end
   end
 

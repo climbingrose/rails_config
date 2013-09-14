@@ -127,7 +127,7 @@ module DeepMerge
           puts if merge_debug
         end
         puts "#{di} merging arrays: #{source.inspect} :: #{dest.inspect}" if merge_debug
-        dest = dest | source
+        dest = source
         if sort_merged_arrays; dest.sort!; end
       elsif overwrite_unmergeable
         puts "#{di} overwriting dest: #{source.inspect} -over-> #{dest.inspect}" if merge_debug
